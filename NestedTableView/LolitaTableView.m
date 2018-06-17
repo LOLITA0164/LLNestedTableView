@@ -100,12 +100,13 @@
 
 - (void)scrollStop:(NSNotification *)notification{
     LolitaTableView *table = notification.object;
-    // 把其他所有的sub都移动到顶部
-    if (table.type == LolitaTableViewTypeSub && self.type == LolitaTableViewTypeSub) {
-        [self setContentOffset:CGPointZero];
-    }
     if(self != table){  // 发送通知的table和当前self不是同一个时，则需要滚动
         self.canScroll = YES;
+    }
+    // 把其他所有的sub都移动到顶部,除去主的，其他table皆不能滚动
+    if (table.type == LolitaTableViewTypeSub && self.type == LolitaTableViewTypeSub) {
+        [self setContentOffset:CGPointZero];
+        self.canScroll = NO;
     }
 }
 
