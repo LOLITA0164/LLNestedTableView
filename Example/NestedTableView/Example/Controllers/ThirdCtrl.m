@@ -7,14 +7,15 @@
 //
 
 #import "ThirdCtrl.h"
-#import "LolitaTableView.h"
+#import "LLNestedTableView.h"
 #import "SubView.h"
 #import "TitlesView.h"
 #define getRandomNumberFromAtoB(A,B) (int)(A+(arc4random()%(B-A+1)))
+#define kNavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height + 44.0)
 static CGFloat const kHeaderViewHeight = 50.0f;
 
-@interface ThirdCtrl ()<UITableViewDelegate,UITableViewDataSource,LolitaTableViewDelegate>
-@property (strong ,nonatomic) LolitaTableView *mainTable;
+@interface ThirdCtrl ()<UITableViewDelegate,UITableViewDataSource,LLNestedTableViewProtocol>
+@property (strong ,nonatomic) LLNestedTableView *mainTable;
 @property (strong ,nonatomic) SubView *subView;
 @property (strong ,nonatomic) TitlesView *titlesView;
 @end
@@ -54,15 +55,15 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 }
 
 
--(LolitaTableView *)mainTable{
+-(LLNestedTableView *)mainTable{
     if (_mainTable==nil) {
-        _mainTable = [[LolitaTableView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64) style:UITableViewStyleGrouped];
+        _mainTable = [[LLNestedTableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-kNavBarHeight) style:UITableViewStylePlain];
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
-        _mainTable.delegate_StayPosition = self;
+        _mainTable.delegateNested = self;
         _mainTable.tableFooterView = [UIView new];
         _mainTable.showsVerticalScrollIndicator = NO;
-        _mainTable.type = LolitaTableViewTypeMain;
+        _mainTable.typeNested = LLNestedTableViewTypeMain;
         UILabel *headerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
         headerView.text = @"我是主tableHeaderView";
         headerView.textAlignment = NSTextAlignmentCenter;
@@ -104,7 +105,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0.01;
+    return 1;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return kHeaderViewHeight;
@@ -114,6 +115,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20)];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = [NSString stringWithFormat:@"section%ld头部",section];
+        label.backgroundColor = UIColor.groupTableViewBackgroundColor;
         return (UIView*)label;
     }
     return self.titlesView;
@@ -121,14 +123,14 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==0||indexPath.section==1) {
-        return 50;
+        return 40;
     }
     return self.subView.bounds.size.height;
 }
 
 
 // !!!: 悬停的位置
--(CGFloat)lolitaTableViewHeightForStayPosition:(LolitaTableView *)tableView{
+-(CGFloat)llNestedTableViewStayPosition:(LLNestedTableView *)tableView{
     return [tableView rectForSection:2].origin.y;
 }
 

@@ -21,14 +21,14 @@
 }
 
 
--(LolitaTableView *)table{
+-(LLNestedTableView *)table{
     if (_table==nil) {
-        _table = [[LolitaTableView alloc] initWithFrame:CGRectZero];
+        _table = [[LLNestedTableView alloc] initWithFrame:CGRectZero];
         _table.delegate = self;
         _table.dataSource = self;
         _table.showsVerticalScrollIndicator = NO;
         _table.tableFooterView = [UIView new];
-        _table.type = LolitaTableViewTypeSub;
+        _table.typeNested = LLNestedTableViewTypeSub;
     }
     return _table;
 }

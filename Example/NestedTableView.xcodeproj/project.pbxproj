@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CC8CBCCB5A7151834BA2990 /* Pods_NestedTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2537FBE58A6BA45DD642943 /* Pods_NestedTableView.framework */; };
+		C71739EC23A7573A0002EEBD /* FirstCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739DF23A7573A0002EEBD /* FirstCtrl.m */; };
+		C71739ED23A7573A0002EEBD /* SecondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E023A7573A0002EEBD /* SecondCtrl.m */; };
+		C71739EE23A7573A0002EEBD /* ThirdCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E423A7573A0002EEBD /* ThirdCtrl.m */; };
+		C71739EF23A7573A0002EEBD /* TitlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E723A7573A0002EEBD /* TitlesView.m */; };
+		C71739F023A7573A0002EEBD /* SubTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E823A7573A0002EEBD /* SubTableView.m */; };
+		C71739F123A7573A0002EEBD /* SubView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E923A7573A0002EEBD /* SubView.m */; };
+		D3BFA8381F7280F000CD4298 /* IndexCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFA8371F7280F000CD4298 /* IndexCtrl.m */; };
+		D3BFF7C51F711249009DF3AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFF7C41F711249009DF3AD /* main.m */; };
+		D3BFF7C81F711249009DF3AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFF7C71F711249009DF3AD /* AppDelegate.m */; };
+		D3BFF7D01F711249009DF3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BFF7CF1F711249009DF3AD /* Assets.xcassets */; };
+		D3BFF7D31F711249009DF3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BFF7D11F711249009DF3AD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56EFF1BAA1373F03E960BFB5 /* Pods-NestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedTableView.debug.xcconfig"; path = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		C711D46A2E21B87347F77D4C /* Pods-NestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedTableView.release.xcconfig"; path = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.release.xcconfig"; sourceTree = "<group>"; };
+		C71739DF23A7573A0002EEBD /* FirstCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCtrl.m; sourceTree = "<group>"; };
+		C71739E023A7573A0002EEBD /* SecondCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCtrl.m; sourceTree = "<group>"; };
+		C71739E123A7573A0002EEBD /* ThirdCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCtrl.h; sourceTree = "<group>"; };
+		C71739E223A7573A0002EEBD /* FirstCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCtrl.h; sourceTree = "<group>"; };
+		C71739E323A7573A0002EEBD /* SecondCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCtrl.h; sourceTree = "<group>"; };
+		C71739E423A7573A0002EEBD /* ThirdCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCtrl.m; sourceTree = "<group>"; };
+		C71739E623A7573A0002EEBD /* SubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubView.h; sourceTree = "<group>"; };
+		C71739E723A7573A0002EEBD /* TitlesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitlesView.m; sourceTree = "<group>"; };
+		C71739E823A7573A0002EEBD /* SubTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTableView.m; sourceTree = "<group>"; };
+		C71739E923A7573A0002EEBD /* SubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubView.m; sourceTree = "<group>"; };
+		C71739EA23A7573A0002EEBD /* TitlesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitlesView.h; sourceTree = "<group>"; };
+		C71739EB23A7573A0002EEBD /* SubTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTableView.h; sourceTree = "<group>"; };
+		D3BFA8361F7280F000CD4298 /* IndexCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCtrl.h; sourceTree = "<group>"; };
+		D3BFA8371F7280F000CD4298 /* IndexCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCtrl.m; sourceTree = "<group>"; };
+		D3BFF7C01F711249009DF3AD /* NestedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3BFF7C41F711249009DF3AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3BFF7C61F711249009DF3AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3BFF7C71F711249009DF3AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3BFF7CF1F711249009DF3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3BFF7D21F711249009DF3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3BFF7D41F711249009DF3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2537FBE58A6BA45DD642943 /* Pods_NestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3BFF7BD1F711249009DF3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CBCCB5A7151834BA2990 /* Pods_NestedTableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D1D37DE1278662B2392311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2537FBE58A6BA45DD642943 /* Pods_NestedTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C71739DD23A7573A0002EEBD /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C71739DE23A7573A0002EEBD /* Controllers */,
+				C71739E523A7573A0002EEBD /* Views */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		C71739DE23A7573A0002EEBD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C71739E223A7573A0002EEBD /* FirstCtrl.h */,
+				C71739DF23A7573A0002EEBD /* FirstCtrl.m */,
+				C71739E323A7573A0002EEBD /* SecondCtrl.h */,
+				C71739E023A7573A0002EEBD /* SecondCtrl.m */,
+				C71739E123A7573A0002EEBD /* ThirdCtrl.h */,
+				C71739E423A7573A0002EEBD /* ThirdCtrl.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C71739E523A7573A0002EEBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C71739E623A7573A0002EEBD /* SubView.h */,
+				C71739E923A7573A0002EEBD /* SubView.m */,
+				C71739EA23A7573A0002EEBD /* TitlesView.h */,
+				C71739E723A7573A0002EEBD /* TitlesView.m */,
+				C71739E823A7573A0002EEBD /* SubTableView.m */,
+				C71739EB23A7573A0002EEBD /* SubTableView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3BFF7B71F711249009DF3AD = {
+			isa = PBXGroup;
+			children = (
+				D3BFF7C21F711249009DF3AD /* NestedTableView */,
+				D3BFF7C11F711249009DF3AD /* Products */,
+				E88A20CD6FD4BA00F11B798D /* Pods */,
+				23D1D37DE1278662B2392311 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3BFF7C11F711249009DF3AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3BFF7C01F711249009DF3AD /* NestedTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3BFF7C21F711249009DF3AD /* NestedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C71739DD23A7573A0002EEBD /* Example */,
+				D3BFF7C61F711249009DF3AD /* AppDelegate.h */,
+				D3BFF7C71F711249009DF3AD /* AppDelegate.m */,
+				D3BFA8361F7280F000CD4298 /* IndexCtrl.h */,
+				D3BFA8371F7280F000CD4298 /* IndexCtrl.m */,
+				D3BFF7CF1F711249009DF3AD /* Assets.xcassets */,
+				D3BFF7D11F711249009DF3AD /* LaunchScreen.storyboard */,
+				D3BFF7D41F711249009DF3AD /* Info.plist */,
+				D3BFF7C31F711249009DF3AD /* Supporting Files */,
+			);
+			path = NestedTableView;
+			sourceTree = "<group>";
+		};
+		D3BFF7C31F711249009DF3AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3BFF7C41F711249009DF3AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88A20CD6FD4BA00F11B798D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56EFF1BAA1373F03E960BFB5 /* Pods-NestedTableView.debug.xcconfig */,
+				C711D46A2E21B87347F77D4C /* Pods-NestedTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3BFF7BF1F711249009DF3AD /* NestedTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3BFF7D71F711249009DF3AD /* Build configuration list for PBXNativeTarget "NestedTableView" */;
+			buildPhases = (
+				BBDF734B7443510CC4C3AE78 /* [CP] Check Pods Manifest.lock */,
+				D3BFF7BC1F711249009DF3AD /* Sources */,
+				D3BFF7BD1F711249009DF3AD /* Frameworks */,
+				D3BFF7BE1F711249009DF3AD /* Resources */,
+				7830276B03A67C7AB23CDE88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestedTableView;
+			productName = NestedTableView;
+			productReference = D3BFF7C01F711249009DF3AD /* NestedTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3BFF7B81F711249009DF3AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LOLITA0164;
+				TargetAttributes = {
+					D3BFF7BF1F711249009DF3AD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 94CER85W8E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D3BFF7BB1F711249009DF3AD /* Build configuration list for PBXProject "NestedTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = D3BFF7B71F711249009DF3AD;
+			productRefGroup = D3BFF7C11F711249009DF3AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3BFF7BF1F711249009DF3AD /* NestedTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3BFF7BE1F711249009DF3AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BFF7D31F711249009DF3AD /* LaunchScreen.storyboard in Resources */,
+				D3BFF7D01F711249009DF3AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7830276B03A67C7AB23CDE88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NestedTableView/Pods-NestedTableView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LLNestedTableView/LLNestedTableView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLNestedTableView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NestedTableView/Pods-NestedTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBDF734B7443510CC4C3AE78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NestedTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3BFF7BC1F711249009DF3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71739F023A7573A0002EEBD /* SubTableView.m in Sources */,
+				C71739EE23A7573A0002EEBD /* ThirdCtrl.m in Sources */,
+				D3BFA8381F7280F000CD4298 /* IndexCtrl.m in Sources */,
+				C71739ED23A7573A0002EEBD /* SecondCtrl.m in Sources */,
+				D3BFF7C81F711249009DF3AD /* AppDelegate.m in Sources */,
+				D3BFF7C51F711249009DF3AD /* main.m in Sources */,
+				C71739EC23A7573A0002EEBD /* FirstCtrl.m in Sources */,
+				C71739EF23A7573A0002EEBD /* TitlesView.m in Sources */,
+				C71739F123A7573A0002EEBD /* SubView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3BFF7D11F711249009DF3AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3BFF7D21F711249009DF3AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3BFF7D51F711249009DF3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3BFF7D61F711249009DF3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3BFF7D81F711249009DF3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EFF1BAA1373F03E960BFB5 /* Pods-NestedTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94CER85W8E;
+				INFOPLIST_FILE = NestedTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.NestedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3BFF7D91F711249009DF3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C711D46A2E21B87347F77D4C /* Pods-NestedTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94CER85W8E;
+				INFOPLIST_FILE = NestedTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.NestedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3BFF7BB1F711249009DF3AD /* Build configuration list for PBXProject "NestedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3BFF7D51F711249009DF3AD /* Debug */,
+				D3BFF7D61F711249009DF3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3BFF7D71F711249009DF3AD /* Build configuration list for PBXNativeTarget "NestedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3BFF7D81F711249009DF3AD /* Debug */,
+				D3BFF7D91F711249009DF3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3BFF7B81F711249009DF3AD /* Project object */;
+}

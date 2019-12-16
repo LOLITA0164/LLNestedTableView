@@ -7,11 +7,13 @@
 //
 
 #import "FirstCtrl.h"
-#import "LolitaTableView.h"
+#import "LLNestedTableView.h"
 #import "SubTableView.h"
 
-@interface FirstCtrl ()<UITableViewDelegate,UITableViewDataSource>
-@property (strong ,nonatomic) LolitaTableView *mainTable;
+#define kNavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height + 44.0)
+
+@interface FirstCtrl ()<UITableViewDelegate,UITableViewDataSource,LLNestedTableViewProtocol>
+@property (strong ,nonatomic) LLNestedTableView *mainTable;
 @property (strong ,nonatomic) SubTableView *subTable;
 @end
 
@@ -26,18 +28,19 @@
 
 -(SubTableView *)subTable{
     if (_subTable==nil) {
-        _subTable = [[SubTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, [UIScreen mainScreen].bounds.size.height-64)];
+        _subTable = [[SubTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, [UIScreen mainScreen].bounds.size.height-kNavBarHeight)];
     }
     return _subTable;
 }
 
--(LolitaTableView *)mainTable{
+-(LLNestedTableView *)mainTable{
     if (_mainTable==nil) {
-        _mainTable = [[LolitaTableView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)];
+        _mainTable = [[LLNestedTableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-kNavBarHeight)];
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
         _mainTable.tableFooterView = [UIView new];
-        _mainTable.type = LolitaTableViewTypeMain;
+        _mainTable.typeNested = LLNestedTableViewTypeMain;
+        _mainTable.delegateNested = self;
         UILabel *headerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
         headerView.text = @"我是主tableHeaderView";
         headerView.textAlignment = NSTextAlignmentCenter;
@@ -62,6 +65,10 @@
     return self.subTable.frame.size.height;
 }
 
+// !!!: 悬停的位置
+- (CGFloat)llNestedTableViewStayPosition:(LLNestedTableView *)tableView{
+    return tableView.tableHeaderView.frame.size.height;
+}
 
 
 /*

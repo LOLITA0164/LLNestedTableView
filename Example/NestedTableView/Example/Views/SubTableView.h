@@ -6,11 +6,11 @@
 //  Copyright © 2017年 LOLITA0164. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-#import "LolitaTableView.h"
+#import "LLNestedTableView.h"
 #define getRandomNumberFromAtoB(A,B) (int)(A+(arc4random()%(B-A+1)))
 
 @interface SubTableView : UIView <UITableViewDelegate,UITableViewDataSource>
 
-@property (strong ,nonatomic) LolitaTableView *table;
+@property (strong ,nonatomic) LLNestedTableView *table;
 
 @end

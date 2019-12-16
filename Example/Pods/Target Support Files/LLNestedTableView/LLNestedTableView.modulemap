@@ -1,0 +1,6 @@
+framework module LLNestedTableView {
+  umbrella header "LLNestedTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
