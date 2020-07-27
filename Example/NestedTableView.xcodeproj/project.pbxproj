@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8E917A24CECD0900C47E58 /* FourthCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E917824CECD0900C47E58 /* FourthCtrl.m */; };
+		6A8E917B24CECD0900C47E58 /* FourthCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E917924CECD0900C47E58 /* FourthCtrl.xib */; };
+		6A8E917E24CED07400C47E58 /* SubCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E917D24CED07400C47E58 /* SubCollectionView.m */; };
 		7CC8CBCCB5A7151834BA2990 /* Pods_NestedTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2537FBE58A6BA45DD642943 /* Pods_NestedTableView.framework */; };
 		C71739EC23A7573A0002EEBD /* FirstCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739DF23A7573A0002EEBD /* FirstCtrl.m */; };
 		C71739ED23A7573A0002EEBD /* SecondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C71739E023A7573A0002EEBD /* SecondCtrl.m */; };
@@ -23,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		56EFF1BAA1373F03E960BFB5 /* Pods-NestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedTableView.debug.xcconfig"; path = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8E917724CECD0900C47E58 /* FourthCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthCtrl.h; sourceTree = "<group>"; };
+		6A8E917824CECD0900C47E58 /* FourthCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthCtrl.m; sourceTree = "<group>"; };
+		6A8E917924CECD0900C47E58 /* FourthCtrl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthCtrl.xib; sourceTree = "<group>"; };
+		6A8E917C24CED07400C47E58 /* SubCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCollectionView.h; sourceTree = "<group>"; };
+		6A8E917D24CED07400C47E58 /* SubCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCollectionView.m; sourceTree = "<group>"; };
 		C711D46A2E21B87347F77D4C /* Pods-NestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NestedTableView.release.xcconfig"; path = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.release.xcconfig"; sourceTree = "<group>"; };
 		C71739DF23A7573A0002EEBD /* FirstCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCtrl.m; sourceTree = "<group>"; };
 		C71739E023A7573A0002EEBD /* SecondCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCtrl.m; sourceTree = "<group>"; };
@@ -86,6 +94,9 @@
 				C71739E023A7573A0002EEBD /* SecondCtrl.m */,
 				C71739E123A7573A0002EEBD /* ThirdCtrl.h */,
 				C71739E423A7573A0002EEBD /* ThirdCtrl.m */,
+				6A8E917724CECD0900C47E58 /* FourthCtrl.h */,
+				6A8E917824CECD0900C47E58 /* FourthCtrl.m */,
+				6A8E917924CECD0900C47E58 /* FourthCtrl.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,8 +108,10 @@
 				C71739E923A7573A0002EEBD /* SubView.m */,
 				C71739EA23A7573A0002EEBD /* TitlesView.h */,
 				C71739E723A7573A0002EEBD /* TitlesView.m */,
-				C71739E823A7573A0002EEBD /* SubTableView.m */,
 				C71739EB23A7573A0002EEBD /* SubTableView.h */,
+				C71739E823A7573A0002EEBD /* SubTableView.m */,
+				6A8E917C24CED07400C47E58 /* SubCollectionView.h */,
+				6A8E917D24CED07400C47E58 /* SubCollectionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8E917B24CECD0900C47E58 /* FourthCtrl.xib in Resources */,
 				D3BFF7D31F711249009DF3AD /* LaunchScreen.storyboard in Resources */,
 				D3BFF7D01F711249009DF3AD /* Assets.xcassets in Resources */,
 			);
@@ -276,9 +290,11 @@
 				D3BFA8381F7280F000CD4298 /* IndexCtrl.m in Sources */,
 				C71739ED23A7573A0002EEBD /* SecondCtrl.m in Sources */,
 				D3BFF7C81F711249009DF3AD /* AppDelegate.m in Sources */,
+				6A8E917E24CED07400C47E58 /* SubCollectionView.m in Sources */,
 				D3BFF7C51F711249009DF3AD /* main.m in Sources */,
 				C71739EC23A7573A0002EEBD /* FirstCtrl.m in Sources */,
 				C71739EF23A7573A0002EEBD /* TitlesView.m in Sources */,
+				6A8E917A24CECD0900C47E58 /* FourthCtrl.m in Sources */,
 				C71739F123A7573A0002EEBD /* SubView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94CER85W8E;
 				INFOPLIST_FILE = NestedTableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.NestedTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94CER85W8E;
 				INFOPLIST_FILE = NestedTableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.NestedTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

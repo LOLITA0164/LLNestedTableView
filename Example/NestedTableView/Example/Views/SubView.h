@@ -12,7 +12,5 @@
 
 @property (strong ,nonatomic) UIScrollView *contentView;
 
-typedef void (^contentViewScrollEvent)(NSInteger);
-@property (nonatomic, strong) contentViewScrollEvent scrollEventBlock;  // 回调点击事件
 
 @end

@@ -8,7 +8,7 @@
 
 #import "SubTableView.h"
 
-@implementation SubTableView
+@implementation SubTableView 
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -28,7 +28,7 @@
         _table.dataSource = self;
         _table.showsVerticalScrollIndicator = NO;
         _table.tableFooterView = [UIView new];
-        _table.typeNested = LLNestedTableViewTypeSub;
+        _table.typeNested = LLNestedScrollContainerTypeSub;
     }
     return _table;
 }

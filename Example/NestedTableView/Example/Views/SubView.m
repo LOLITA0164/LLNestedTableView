@@ -20,7 +20,6 @@
         _contentView.contentSize = CGSizeMake(frame.size.width*3, frame.size.height);
         _contentView.pagingEnabled = YES;
         _contentView.bounces = YES;
-        _contentView.delegate = self;
         _contentView.showsHorizontalScrollIndicator = NO;
         [self addSubview:_contentView];
         
@@ -33,12 +32,5 @@
     return self;
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    CGFloat offsetX = scrollView.contentOffset.x;
-    NSInteger pageNum = offsetX/[UIScreen mainScreen].bounds.size.width;
-    if (self.scrollEventBlock) {
-        self.scrollEventBlock(pageNum);
-    }
-}
 
 @end

@@ -1,81 +1,82 @@
 //
-//  ThirdCtrl.m
+//  FourthCtrl.m
 //  NestedTableView
 //
-//  Created by LOLITA on 2017/9/20.
-//  Copyright © 2017年 LOLITA0164. All rights reserved.
+//  Created by LL on 2020/7/27.
+//  Copyright © 2020 LOLITA0164. All rights reserved.
 //
 
-#import "ThirdCtrl.h"
+#import "FourthCtrl.h"
 #import "LLNestedTableView.h"
-#import "SubView.h"
+#import "SubCollectionView.h"
+#import "SubTableView.h"
 #import "TitlesView.h"
 #define getRandomNumberFromAtoB(A,B) (int)(A+(arc4random()%(B-A+1)))
 #define kNavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height + 44.0)
 static CGFloat const kHeaderViewHeight = 50.0f;
 
-@interface ThirdCtrl ()<UITableViewDelegate,UITableViewDataSource>
-@property (strong ,nonatomic) LLNestedTableView *mainTable;
-@property (strong ,nonatomic) SubView *subView;
+@interface FourthCtrl () <UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet LLNestedTableView *mainTable;
+@property (strong ,nonatomic) UIScrollView *contentView;
 @property (strong ,nonatomic) TitlesView *titlesView;
+
 @end
 
-@implementation ThirdCtrl
+@implementation FourthCtrl
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = UIColor.whiteColor;
-    [self.view addSubview:self.mainTable];
+    
+    _mainTable.typeNested = LLNestedScrollContainerTypeMain;
+    typeof(self) __weak ws = self;
+    _mainTable.stayPosition = ^CGFloat() {
+        return [ws.mainTable rectForSection:2].origin.y;
+    };
+    
+    UILabel *footerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
+    footerView.textAlignment = NSTextAlignmentCenter;
+    footerView.backgroundColor = [UIColor brownColor];
+    footerView.text = @"我是主tableFooterView";
+    _mainTable.tableFooterView = footerView;
 }
 
--(SubView *)subView{
-    if (_subView==nil) {
-        _subView = [[SubView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.mainTable.frame.size.height-kHeaderViewHeight-40)];
-        _subView.contentView.delegate = self;
+-(UIScrollView *)contentView {
+    if (_contentView == nil) {
+        CGRect frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.mainTable.frame.size.height-kHeaderViewHeight-40);
+        _contentView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        _contentView.contentSize = CGSizeMake(frame.size.width*2, frame.size.height);
+        _contentView.pagingEnabled = YES;
+        _contentView.bounces = YES;
+        _contentView.showsHorizontalScrollIndicator = NO;
+        _contentView.delegate = self;
+        for (int i=0; i<2; i++) {
+            if (i==0) {
+                SubTableView *aSubTable = [[SubTableView alloc] initWithFrame:CGRectMake(i*frame.size.width, 0, frame.size.width, frame.size.height)];
+                [_contentView addSubview:aSubTable];
+            }
+            else {
+                SubCollectionView *aSubCollection = [[SubCollectionView alloc] initWithFrame:CGRectMake(i*frame.size.width, 0, frame.size.width, frame.size.height)];
+                [_contentView addSubview:aSubCollection];
+            }
+        }
     }
-    return _subView;
+    return _contentView;
 }
 
 -(TitlesView *)titlesView{
     if (_titlesView==nil) {
-        _titlesView = [[TitlesView alloc] initWithTitleArray:@[@"列表0",@"列表1",@"列表2"]];
+        _titlesView = [[TitlesView alloc] initWithTitleArray:@[@"列表视图",@"集合视图"]];
         __weak typeof(self) weakSelf = self;
         _titlesView.titleClickBlock = ^(NSInteger row){
-            if (weakSelf.subView.contentView) {
-                weakSelf.subView.contentView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width*row, 0);
+            if (weakSelf.contentView) {
+                weakSelf.contentView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width*row, 0);
             }
         };
     }
     return _titlesView;
 }
 
-
--(LLNestedTableView *)mainTable{
-    if (_mainTable==nil) {
-        _mainTable = [[LLNestedTableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-kNavBarHeight) style:UITableViewStylePlain];
-        _mainTable.delegate = self;
-        _mainTable.dataSource = self;
-        _mainTable.tableFooterView = [UIView new];
-        _mainTable.showsVerticalScrollIndicator = NO;
-        _mainTable.typeNested = LLNestedScrollContainerTypeMain;
-        typeof(self) __weak ws = self;
-        _mainTable.stayPosition = ^CGFloat() {
-            return [ws.mainTable rectForSection:2].origin.y;
-        };
-        UILabel *headerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
-        headerView.text = @"我是主tableHeaderView";
-        headerView.textAlignment = NSTextAlignmentCenter;
-        headerView.backgroundColor = [UIColor yellowColor];
-        _mainTable.tableHeaderView = headerView;
-        UILabel *footerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
-        footerView.textAlignment = NSTextAlignmentCenter;
-        footerView.backgroundColor = [UIColor brownColor];
-        footerView.text = @"我是主tableFooterView";
-        _mainTable.tableFooterView = footerView;
-    }
-    return _mainTable;
-}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
@@ -99,7 +100,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     }else{
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell addSubview:self.subView];
+        [cell addSubview:self.contentView];
         return cell;
     }
 }
@@ -124,14 +125,14 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     if (indexPath.section==0||indexPath.section==1) {
         return 40;
     }
-    return self.subView.bounds.size.height;
+    return self.contentView.bounds.size.height;
 }
 
 
 
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    if (scrollView == self.subView.contentView) {
+    if (scrollView == self.contentView) {
         CGFloat offsetX = scrollView.contentOffset.x;
         NSInteger pageNum = offsetX/[UIScreen mainScreen].bounds.size.width;
         [self.titlesView setItemSelected:pageNum];
@@ -142,9 +143,9 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 // 控制多个容器之间同时滚动
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     if (scrollView == self.mainTable) {
-        self.subView.contentView.scrollEnabled = NO;
+        self.contentView.scrollEnabled = NO;
     }
-    else if (scrollView == self.subView.contentView) {
+    else if (scrollView == self.contentView) {
         self.mainTable.scrollEnabled = NO;
     }
     else {
@@ -153,17 +154,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 }
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     self.mainTable.scrollEnabled = YES;
-    self.subView.contentView.scrollEnabled = YES;
+    self.contentView.scrollEnabled = YES;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

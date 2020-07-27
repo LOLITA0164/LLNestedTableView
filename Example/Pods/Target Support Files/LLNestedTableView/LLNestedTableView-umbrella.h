@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "LLNestedCollectionView.h"
+#import "LLNestedScrollContainerDelegate.h"
 #import "LLNestedTableView.h"
 
 FOUNDATION_EXPORT double LLNestedTableViewVersionNumber;

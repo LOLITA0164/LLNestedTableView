@@ -34,7 +34,8 @@
         _datas =  @[
                     @[@"情况一",@"FirstCtrl"],
                     @[@"情况二",@"SecondCtrl"],
-                    @[@"情况三",@"ThirdCtrl"]
+                    @[@"情况三",@"ThirdCtrl"],
+                    @[@"情况四：UITableView+UICollectionView",@"FourthCtrl"]
                     ];
     }
     return _datas;

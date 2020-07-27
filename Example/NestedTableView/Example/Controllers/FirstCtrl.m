@@ -12,7 +12,7 @@
 
 #define kNavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height + 44.0)
 
-@interface FirstCtrl ()<UITableViewDelegate,UITableViewDataSource,LLNestedTableViewProtocol>
+@interface FirstCtrl ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong ,nonatomic) LLNestedTableView *mainTable;
 @property (strong ,nonatomic) SubTableView *subTable;
 @end
@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
+    self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.mainTable];
 }
 
@@ -39,8 +39,11 @@
         _mainTable.delegate = self;
         _mainTable.dataSource = self;
         _mainTable.tableFooterView = [UIView new];
-        _mainTable.typeNested = LLNestedTableViewTypeMain;
-        _mainTable.delegateNested = self;
+        _mainTable.typeNested = LLNestedScrollContainerTypeMain;
+        typeof(self) __weak ws = self;
+        _mainTable.stayPosition = ^CGFloat() {
+            return ws.mainTable.tableHeaderView.frame.size.height;
+        };
         UILabel *headerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
         headerView.text = @"我是主tableHeaderView";
         headerView.textAlignment = NSTextAlignmentCenter;
@@ -65,10 +68,6 @@
     return self.subTable.frame.size.height;
 }
 
-// !!!: 悬停的位置
-- (CGFloat)llNestedTableViewStayPosition:(LLNestedTableView *)tableView{
-    return tableView.tableHeaderView.frame.size.height;
-}
 
 
 /*
