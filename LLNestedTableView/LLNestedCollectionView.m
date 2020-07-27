@@ -1,14 +1,14 @@
 //
-//  LLNestedTableView.m
+//  LLNestedCollectionView.m
 //  Demo
 //
 //  Created by LL on 2020/7/27.
 //  Copyright © 2020 LL. All rights reserved.
 //
 
-#import "LLNestedTableView.h"
+#import "LLNestedCollectionView.h"
 
-@implementation LLNestedTableView
+@implementation LLNestedCollectionView
 @synthesize canScroll = _canScroll;
 @synthesize flag = _flag;
 @synthesize typeNested = _typeNested;
@@ -28,13 +28,12 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
-    if (self = [super initWithFrame:frame style:style]) {
+-(instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
+    if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         [self setup];
     }
     return self;
 }
-
 
 -(void)setup{
     
@@ -65,9 +64,6 @@
         }
         
     }];
-    
-    // KVO 的方式实现联动
-//    [self addKVO];
 }
 
 -(void)setTypeNested:(LLNestedScrollContainerType)typeNested{
@@ -148,72 +144,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#pragma mark - kVO 的方式
--(void)addKVO{
-    [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
-}
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void *)context {
-    if (![object isKindOfClass:LLNestedTableView.class]) {return;}
-    
-    CGPoint point = [[self valueForKey:@"contentOffset"] CGPointValue];
-    if (self.typeNested == LLNestedScrollContainerTypeNormal) {
-        return; // 普通类型不做修改
-    }
-    switch (self.typeNested) {
-            
-            // 主列表类型
-        case LLNestedScrollContainerTypeMain:
-        {
-            CGFloat stayPosition = self.stayPosition();
-            if (self.canScroll) {
-                // 当主列表滚动位置超过预设时，我们发出通知，让子列表不能滚动
-                if (point.y > stayPosition) {
-                    [self setContentOffset:CGPointMake(point.x, stayPosition)];
-                    self.canScroll = NO;
-                    [NSNotificationCenter.defaultCenter postNotificationName:LLNestedScrollContainerStopNotification object:self];
-                }
-            } else {
-                // 让其“停止”在预设位置
-                [self setContentOffset:CGPointMake(point.x, stayPosition) animated:NO];
-            }
-            
-        }
-            break;
-            
-            // 子列表类型
-        case LLNestedScrollContainerTypeSub:
-        {
-            if (self.canScroll) {
-                // 当子列表被下拉到最初位置时，我们让其“停止”，并发送通知，让主列表可以滚动
-                if (point.y < 0) {
-                    [self setContentOffset:CGPointZero];
-                    self.canScroll = NO;
-                    [NSNotificationCenter.defaultCenter postNotificationName:LLNestedScrollContainerStopNotification object:self];
-                }
-            } else {
-                [super setContentOffset:CGPointZero];
-            }
-        }
-            break;
-        default:
-            break;
-    }
-
-}
 
 
 

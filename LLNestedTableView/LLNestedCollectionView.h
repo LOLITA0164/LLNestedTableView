@@ -1,5 +1,5 @@
 //
-//  LLNestedTableView.h
+//  LLNestedCollectionView.h
 //  Demo
 //
 //  Created by LL on 2020/7/27.
@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "LLNestedScrollContainerDelegate.h"
 
-@interface LLNestedTableView : UITableView <LLNestedScrollContainerDelegate>
+@interface LLNestedCollectionView : UICollectionView <LLNestedScrollContainerDelegate>
 
 @end
-
