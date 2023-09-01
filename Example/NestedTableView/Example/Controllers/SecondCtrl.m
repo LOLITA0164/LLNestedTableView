@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.mainTable];
 }
@@ -40,6 +39,7 @@
         _mainTable.dataSource = self;
         _mainTable.tableFooterView = [UIView new];
         _mainTable.typeNested = LLNestedScrollContainerTypeMain;
+        _mainTable.contentInsetAdjustmentBehavior = NO;
         typeof(self) __weak ws = self;
         _mainTable.stayPosition = ^CGFloat() {
             return [ws.mainTable rectForRowAtIndexPath:[NSIndexPath indexPathForRow:4 inSection:0]].origin.y;
@@ -72,7 +72,7 @@
     }else{
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell addSubview:self.subTable];
+        [cell.contentView addSubview:self.subTable];
         return cell;
     }
 }

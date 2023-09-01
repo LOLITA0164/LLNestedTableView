@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F7358588487A42BE2F78500C1D2F96 /* LLNestedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EF0B8CE6E6DA7DF585F1DFE186E9B0 /* LLNestedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		125DAD7341A370A73CD7C85BF3D6224D /* Pods-NestedTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3942471B341AD0714EC3E3774F86C9B /* Pods-NestedTableView-dummy.m */; };
-		23B110B693E457F727E6F35A4FF8A335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		367DA94DB6286ED980E5FF582A30E583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5978368E80755BFFEC27B4342C33B4F6 /* LLNestedTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28EB6A2E35E6B32D51D5862D4DC514D0 /* LLNestedTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BE75D13B9E0750E482CD0801413965C /* LLNestedScrollContainerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FBADC5590517FFBE3D8FF0C103485BB7 /* LLNestedScrollContainerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92E01CC4651F65F50B64BB672E534524 /* LLNestedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C487C6DA72A026171E97DCD0193E86 /* LLNestedTableView.m */; };
-		D6D885A02940DD0520F63422CDFAB215 /* LLNestedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAFD1DA847177600D18F1A16C2026B /* LLNestedCollectionView.m */; };
-		E5DD6AC4B12C6B8D755E4CBB9A6152CF /* LLNestedTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AA52989E9C9B371E7494C432096CAF /* LLNestedTableView-dummy.m */; };
-		FC7680474E98F0E5FE2782A64A6B4779 /* LLNestedCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2057E31AC74399D8312CE883C816FE0 /* LLNestedCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCEB6E8F05750B7FB7F735FCC356DEB5 /* Pods-NestedTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D159129A802D5CA3535ADFA2D7B24C7 /* Pods-NestedTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		109BED49E8A0EDCCD7EBB0E97AA5F7FB /* Pods-NestedTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3942471B341AD0714EC3E3774F86C9B /* Pods-NestedTableView-dummy.m */; };
+		38A0A803C17373BB42B50DB3386ACC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3C123960A47ACE6E74C3462BF037E4E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4CC7BC23D478A78FAFA0D56299F19873 /* LLNestedScrollContainerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3768D31E771155ADD61C3AF8249E7875 /* LLNestedScrollContainerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665419B76E6B9C21E1A504C7ABABF9F1 /* LLNestedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E20638DEA5FFBC9D2E9564CA6F4D37 /* LLNestedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E8241CDAC0CC9381C898CAF111FD9CA /* Pods-NestedTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D159129A802D5CA3535ADFA2D7B24C7 /* Pods-NestedTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6C986440D4C8DA375E151649215545 /* LLNestedCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30349601322709E0750939A3C0EDB1 /* LLNestedCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1A8B1F3CDD332DE52D05F4F34718C8 /* LLNestedTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55124BB1C5D4008C8A09CE9687A6DA43 /* LLNestedTableView-dummy.m */; };
+		BEE4A17ABBC668E44329276070AB8A4F /* LLNestedTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF163BD848767FE3A24B5CC806CB3201 /* LLNestedTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C69170D8FEBCC9BE25246C52AF98176C /* LLNestedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5E83843DB489785BC5C41ED8AEAD63 /* LLNestedTableView.m */; };
+		FECF3582004E802EAA1DF0D0AF28FA1A /* LLNestedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B84D635C11A89AE3453FB425E4A7C64D /* LLNestedCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14751B308688571B3ACEC0846D8A271D /* PBXContainerItemProxy */ = {
+		642E7383E77F72DBEF1B397311F131A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -32,47 +32,48 @@
 
 /* Begin PBXFileReference section */
 		1967EA2DB3A782BDE41E07F6EE403582 /* Pods-NestedTableView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NestedTableView-frameworks.sh"; sourceTree = "<group>"; };
-		28EB6A2E35E6B32D51D5862D4DC514D0 /* LLNestedTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLNestedTableView-umbrella.h"; sourceTree = "<group>"; };
-		2D98BEE3A226E27F333B68149E8DECC5 /* LLNestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LLNestedTableView.framework; path = LLNestedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31CD2A28C85E45B8A0E77DC0641E145C /* LLNestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLNestedTableView.release.xcconfig; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36253FED806236B8D740B554D99EDAF4 /* LLNestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLNestedTableView.debug.xcconfig; sourceTree = "<group>"; };
+		199A13D4B43E85B3C22A898A7557FF66 /* LLNestedTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LLNestedTableView.modulemap; sourceTree = "<group>"; };
+		1C30349601322709E0750939A3C0EDB1 /* LLNestedCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedCollectionView.h; path = LLNestedTableView/LLNestedCollectionView.h; sourceTree = "<group>"; };
+		269A62F7AF6E7D04166F4499FAD57EB6 /* LLNestedTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLNestedTableView-prefix.pch"; sourceTree = "<group>"; };
+		2D98BEE3A226E27F333B68149E8DECC5 /* LLNestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LLNestedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3768D31E771155ADD61C3AF8249E7875 /* LLNestedScrollContainerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedScrollContainerDelegate.h; path = LLNestedTableView/LLNestedScrollContainerDelegate.h; sourceTree = "<group>"; };
 		3C7D6581DA9D500248A5008CDB2F940B /* Pods-NestedTableView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NestedTableView-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D159129A802D5CA3535ADFA2D7B24C7 /* Pods-NestedTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NestedTableView-umbrella.h"; sourceTree = "<group>"; };
-		580F5483DEF60591C03F0FD68A706182 /* LLNestedTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LLNestedTableView-Info.plist"; sourceTree = "<group>"; };
+		55124BB1C5D4008C8A09CE9687A6DA43 /* LLNestedTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLNestedTableView-dummy.m"; sourceTree = "<group>"; };
+		55D8736EBBA2A9EDDFE24CF91F5C0017 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		59F5BE390841B6444EA8A61EF118D206 /* Pods-NestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NestedTableView.release.xcconfig"; sourceTree = "<group>"; };
+		5D47E2609AF1C11E5233BC34254A4FF5 /* LLNestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLNestedTableView.debug.xcconfig; sourceTree = "<group>"; };
 		67B67411C8DF542E895B86649D1267EC /* Pods-NestedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NestedTableView.debug.xcconfig"; sourceTree = "<group>"; };
-		755C97188EEB216A521A346FFD6E918D /* LLNestedTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLNestedTableView-prefix.pch"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		760800A0482FE0619EB65CC4132749F7 /* Pods-NestedTableView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NestedTableView-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DEAFD1DA847177600D18F1A16C2026B /* LLNestedCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLNestedCollectionView.m; path = LLNestedTableView/LLNestedCollectionView.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7AA52989E9C9B371E7494C432096CAF /* LLNestedTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLNestedTableView-dummy.m"; sourceTree = "<group>"; };
+		8911E1BF897AEB979CAFAA0BA319C3EE /* LLNestedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLNestedTableView.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABEFDD16CEE26D0EF7AECE7178C1F12B /* Pods-NestedTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NestedTableView.modulemap"; sourceTree = "<group>"; };
-		BBDA0DEF4930C39F9880BD5CF54ECB02 /* LLNestedTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LLNestedTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B84D635C11A89AE3453FB425E4A7C64D /* LLNestedCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLNestedCollectionView.m; path = LLNestedTableView/LLNestedCollectionView.m; sourceTree = "<group>"; };
+		B9E20638DEA5FFBC9D2E9564CA6F4D37 /* LLNestedTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedTableView.h; path = LLNestedTableView/LLNestedTableView.h; sourceTree = "<group>"; };
 		BBE149906AC2510B884878EFDAAAABE3 /* Pods-NestedTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NestedTableView-Info.plist"; sourceTree = "<group>"; };
-		BE8E32179ACAFAFA97E0092C4A424F83 /* Pods_NestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NestedTableView.framework; path = "Pods-NestedTableView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5DB1928FFCB957CC981FF24B659C99E /* LLNestedTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LLNestedTableView.modulemap; sourceTree = "<group>"; };
-		C8C487C6DA72A026171E97DCD0193E86 /* LLNestedTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLNestedTableView.m; path = LLNestedTableView/LLNestedTableView.m; sourceTree = "<group>"; };
-		D2057E31AC74399D8312CE883C816FE0 /* LLNestedCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedCollectionView.h; path = LLNestedTableView/LLNestedCollectionView.h; sourceTree = "<group>"; };
-		D9EF0B8CE6E6DA7DF585F1DFE186E9B0 /* LLNestedTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedTableView.h; path = LLNestedTableView/LLNestedTableView.h; sourceTree = "<group>"; };
+		BE8E32179ACAFAFA97E0092C4A424F83 /* Pods_NestedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NestedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF163BD848767FE3A24B5CC806CB3201 /* LLNestedTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLNestedTableView-umbrella.h"; sourceTree = "<group>"; };
+		DE5E83843DB489785BC5C41ED8AEAD63 /* LLNestedTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLNestedTableView.m; path = LLNestedTableView/LLNestedTableView.m; sourceTree = "<group>"; };
+		E2E257F340AC5282A5D8C5B426523F23 /* LLNestedTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LLNestedTableView-Info.plist"; sourceTree = "<group>"; };
 		E3942471B341AD0714EC3E3774F86C9B /* Pods-NestedTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NestedTableView-dummy.m"; sourceTree = "<group>"; };
-		FBADC5590517FFBE3D8FF0C103485BB7 /* LLNestedScrollContainerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNestedScrollContainerDelegate.h; path = LLNestedTableView/LLNestedScrollContainerDelegate.h; sourceTree = "<group>"; };
+		F75E85CA17E2A0B9FA361594E63152C2 /* LLNestedTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LLNestedTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C1C4410458C53B54B034C3B3C0AA95A /* Frameworks */ = {
+		81AC23BE590AE7D8BA2C5A844F8BAF63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B110B693E457F727E6F35A4FF8A335 /* Foundation.framework in Frameworks */,
+				38A0A803C17373BB42B50DB3386ACC44 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBAC86E98F3C5BE3B349D5A95CFADBB2 /* Frameworks */ = {
+		C5B1E83DC4D8E7C0B6A2DB6E6EA93DAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367DA94DB6286ED980E5FF582A30E583 /* Foundation.framework in Frameworks */,
+				3C123960A47ACE6E74C3462BF037E4E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,43 +88,68 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		55B99A155D9B0A4FD8F2236563E8883E /* Pod */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BBDA0DEF4930C39F9880BD5CF54ECB02 /* LLNestedTableView.podspec */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = Pod;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		5EAD76978C0BA21BF651D76A2FA73106 /* LLNestedTableView */ = {
+		65BF84896FB1E14DE6CB3B8D32C1D9A6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2057E31AC74399D8312CE883C816FE0 /* LLNestedCollectionView.h */,
-				8DEAFD1DA847177600D18F1A16C2026B /* LLNestedCollectionView.m */,
-				FBADC5590517FFBE3D8FF0C103485BB7 /* LLNestedScrollContainerDelegate.h */,
-				D9EF0B8CE6E6DA7DF585F1DFE186E9B0 /* LLNestedTableView.h */,
-				C8C487C6DA72A026171E97DCD0193E86 /* LLNestedTableView.m */,
-				55B99A155D9B0A4FD8F2236563E8883E /* Pod */,
-				F6937816EC362F46DDDB6ADD41D45598 /* Support Files */,
+				199A13D4B43E85B3C22A898A7557FF66 /* LLNestedTableView.modulemap */,
+				55124BB1C5D4008C8A09CE9687A6DA43 /* LLNestedTableView-dummy.m */,
+				E2E257F340AC5282A5D8C5B426523F23 /* LLNestedTableView-Info.plist */,
+				269A62F7AF6E7D04166F4499FAD57EB6 /* LLNestedTableView-prefix.pch */,
+				CF163BD848767FE3A24B5CC806CB3201 /* LLNestedTableView-umbrella.h */,
+				5D47E2609AF1C11E5233BC34254A4FF5 /* LLNestedTableView.debug.xcconfig */,
+				8911E1BF897AEB979CAFAA0BA319C3EE /* LLNestedTableView.release.xcconfig */,
 			);
-			name = LLNestedTableView;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LLNestedTableView";
+			sourceTree = "<group>";
+		};
+		923F99D8BAACCDF57A93D2C9537D86B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D98BEE3A226E27F333B68149E8DECC5 /* LLNestedTableView.framework */,
+				BE8E32179ACAFAFA97E0092C4A424F83 /* Pods_NestedTableView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B73E0845F6E9D6FC82B1DDD7804DC296 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5EAD76978C0BA21BF651D76A2FA73106 /* LLNestedTableView */,
+				CC1B0D7934525D81079638B8CB78F060 /* LLNestedTableView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		B8A397C089B7E2ABAC4CE573EBCED850 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				F75E85CA17E2A0B9FA361594E63152C2 /* LLNestedTableView.podspec */,
+				55D8736EBBA2A9EDDFE24CF91F5C0017 /* README.md */,
 			);
-			name = iOS;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CC1B0D7934525D81079638B8CB78F060 /* LLNestedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1C30349601322709E0750939A3C0EDB1 /* LLNestedCollectionView.h */,
+				B84D635C11A89AE3453FB425E4A7C64D /* LLNestedCollectionView.m */,
+				3768D31E771155ADD61C3AF8249E7875 /* LLNestedScrollContainerDelegate.h */,
+				B9E20638DEA5FFBC9D2E9564CA6F4D37 /* LLNestedTableView.h */,
+				DE5E83843DB489785BC5C41ED8AEAD63 /* LLNestedTableView.m */,
+				B8A397C089B7E2ABAC4CE573EBCED850 /* Pod */,
+				65BF84896FB1E14DE6CB3B8D32C1D9A6 /* Support Files */,
+			);
+			name = LLNestedTableView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -132,7 +158,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B73E0845F6E9D6FC82B1DDD7804DC296 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F9330CB7A1436707444289BF7505EB46 /* Products */,
+				923F99D8BAACCDF57A93D2C9537D86B2 /* Products */,
 				04A154750DF744045A36E1719B20A39D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -140,33 +166,9 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F6937816EC362F46DDDB6ADD41D45598 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5DB1928FFCB957CC981FF24B659C99E /* LLNestedTableView.modulemap */,
-				A7AA52989E9C9B371E7494C432096CAF /* LLNestedTableView-dummy.m */,
-				580F5483DEF60591C03F0FD68A706182 /* LLNestedTableView-Info.plist */,
-				755C97188EEB216A521A346FFD6E918D /* LLNestedTableView-prefix.pch */,
-				28EB6A2E35E6B32D51D5862D4DC514D0 /* LLNestedTableView-umbrella.h */,
-				36253FED806236B8D740B554D99EDAF4 /* LLNestedTableView.debug.xcconfig */,
-				31CD2A28C85E45B8A0E77DC0641E145C /* LLNestedTableView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LLNestedTableView";
-			sourceTree = "<group>";
-		};
-		F9330CB7A1436707444289BF7505EB46 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2D98BEE3A226E27F333B68149E8DECC5 /* LLNestedTableView.framework */,
-				BE8E32179ACAFAFA97E0092C4A424F83 /* Pods_NestedTableView.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FC8E0DED1A43373A134CC8BBBA901E76 /* Pods-NestedTableView */ = {
@@ -189,22 +191,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		44A69810F922EC82239022B600236469 /* Headers */ = {
+		2554BF773DD4F3975E2F9025ACBE0CF0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCEB6E8F05750B7FB7F735FCC356DEB5 /* Pods-NestedTableView-umbrella.h in Headers */,
+				9D6C986440D4C8DA375E151649215545 /* LLNestedCollectionView.h in Headers */,
+				4CC7BC23D478A78FAFA0D56299F19873 /* LLNestedScrollContainerDelegate.h in Headers */,
+				665419B76E6B9C21E1A504C7ABABF9F1 /* LLNestedTableView.h in Headers */,
+				BEE4A17ABBC668E44329276070AB8A4F /* LLNestedTableView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A312B19C7DE3AAEBC85BEB11F193D7 /* Headers */ = {
+		FCB410D5AF65D84F070D402AEA114EC8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7680474E98F0E5FE2782A64A6B4779 /* LLNestedCollectionView.h in Headers */,
-				6BE75D13B9E0750E482CD0801413965C /* LLNestedScrollContainerDelegate.h in Headers */,
-				5978368E80755BFFEC27B4342C33B4F6 /* LLNestedTableView-umbrella.h in Headers */,
-				02F7358588487A42BE2F78500C1D2F96 /* LLNestedTableView.h in Headers */,
+				7E8241CDAC0CC9381C898CAF111FD9CA /* Pods-NestedTableView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,12 +215,12 @@
 /* Begin PBXNativeTarget section */
 		BECF794D0B607F04F2EB96EA30FB1D79 /* LLNestedTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C3646C49688075114FE6693831F4324 /* Build configuration list for PBXNativeTarget "LLNestedTableView" */;
+			buildConfigurationList = 923382550DEEFB878A8AA557A284981A /* Build configuration list for PBXNativeTarget "LLNestedTableView" */;
 			buildPhases = (
-				F7A312B19C7DE3AAEBC85BEB11F193D7 /* Headers */,
-				BE37F2DC93FEF0990C55FA9C0ACCAEE8 /* Sources */,
-				6C1C4410458C53B54B034C3B3C0AA95A /* Frameworks */,
-				48EEE2B1F1D6CE8523A4D469EB7D1D15 /* Resources */,
+				2554BF773DD4F3975E2F9025ACBE0CF0 /* Headers */,
+				919CF26788805B44AC1C04BB86F9FEB3 /* Sources */,
+				C5B1E83DC4D8E7C0B6A2DB6E6EA93DAE /* Frameworks */,
+				E42D286404BFA70D94FA330A44860C71 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -231,20 +233,20 @@
 		};
 		CE2AC98843BE25C7B4167E81B15FA7E2 /* Pods-NestedTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80FF198C25710BCA64BD0E5A44B57EC2 /* Build configuration list for PBXNativeTarget "Pods-NestedTableView" */;
+			buildConfigurationList = 14F45EE18D2216EE29C5EDD12A55FFE1 /* Build configuration list for PBXNativeTarget "Pods-NestedTableView" */;
 			buildPhases = (
-				44A69810F922EC82239022B600236469 /* Headers */,
-				0FA1CA1CD266112967D31E85E14A3B8B /* Sources */,
-				CBAC86E98F3C5BE3B349D5A95CFADBB2 /* Frameworks */,
-				5B658AEA1DF337F7D0F10CC16B0C514F /* Resources */,
+				FCB410D5AF65D84F070D402AEA114EC8 /* Headers */,
+				C2C5206E19B7868FCCCDCE8102FBBDB3 /* Sources */,
+				81AC23BE590AE7D8BA2C5A844F8BAF63 /* Frameworks */,
+				CEE9722CEFDCE7E26F815E63D4F2EB58 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				899EE8637DB30CC41376ABD31D51EC67 /* PBXTargetDependency */,
+				90AB3760E204A6BA3285152FEE4AAC43 /* PBXTargetDependency */,
 			);
 			name = "Pods-NestedTableView";
-			productName = "Pods-NestedTableView";
+			productName = Pods_NestedTableView;
 			productReference = BE8E32179ACAFAFA97E0092C4A424F83 /* Pods_NestedTableView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -254,19 +256,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F9330CB7A1436707444289BF7505EB46 /* Products */;
+			productRefGroup = 923F99D8BAACCDF57A93D2C9537D86B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -277,14 +279,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		48EEE2B1F1D6CE8523A4D469EB7D1D15 /* Resources */ = {
+		CEE9722CEFDCE7E26F815E63D4F2EB58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B658AEA1DF337F7D0F10CC16B0C514F /* Resources */ = {
+		E42D286404BFA70D94FA330A44860C71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,42 +296,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FA1CA1CD266112967D31E85E14A3B8B /* Sources */ = {
+		919CF26788805B44AC1C04BB86F9FEB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125DAD7341A370A73CD7C85BF3D6224D /* Pods-NestedTableView-dummy.m in Sources */,
+				FECF3582004E802EAA1DF0D0AF28FA1A /* LLNestedCollectionView.m in Sources */,
+				C69170D8FEBCC9BE25246C52AF98176C /* LLNestedTableView.m in Sources */,
+				9F1A8B1F3CDD332DE52D05F4F34718C8 /* LLNestedTableView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE37F2DC93FEF0990C55FA9C0ACCAEE8 /* Sources */ = {
+		C2C5206E19B7868FCCCDCE8102FBBDB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D885A02940DD0520F63422CDFAB215 /* LLNestedCollectionView.m in Sources */,
-				E5DD6AC4B12C6B8D755E4CBB9A6152CF /* LLNestedTableView-dummy.m in Sources */,
-				92E01CC4651F65F50B64BB672E534524 /* LLNestedTableView.m in Sources */,
+				109BED49E8A0EDCCD7EBB0E97AA5F7FB /* Pods-NestedTableView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		899EE8637DB30CC41376ABD31D51EC67 /* PBXTargetDependency */ = {
+		90AB3760E204A6BA3285152FEE4AAC43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LLNestedTableView;
 			target = BECF794D0B607F04F2EB96EA30FB1D79 /* LLNestedTableView */;
-			targetProxy = 14751B308688571B3ACEC0846D8A271D /* PBXContainerItemProxy */;
+			targetProxy = 642E7383E77F72DBEF1B397311F131A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05B0B9BF435299D2B65AC7996796CFBF /* Release */ = {
+		078DBC43DA05C6D93366A5D27DA95D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F5BE390841B6444EA8A61EF118D206 /* Pods-NestedTableView.release.xcconfig */;
+			baseConfigurationReference = 67B67411C8DF542E895B86649D1267EC /* Pods-NestedTableView.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -340,7 +341,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.modulemap";
@@ -352,47 +353,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		1CBCBA12C416EC6C031FE6773B052CDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31CD2A28C85E45B8A0E77DC0641E145C /* LLNestedTableView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LLNestedTableView/LLNestedTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView.modulemap";
-				PRODUCT_MODULE_NAME = LLNestedTableView;
-				PRODUCT_NAME = LLNestedTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -415,6 +385,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -442,19 +413,47 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		686082E43BE8CF5A0635C1F768CA8699 /* Debug */ = {
+		8E6315FEFC416F6F02BE5D0562C1F94C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67B67411C8DF542E895B86649D1267EC /* Pods-NestedTableView.debug.xcconfig */;
+			baseConfigurationReference = 8911E1BF897AEB979CAFAA0BA319C3EE /* LLNestedTableView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LLNestedTableView/LLNestedTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView.modulemap";
+				PRODUCT_MODULE_NAME = LLNestedTableView;
+				PRODUCT_NAME = LLNestedTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD28339AA734B4D7F078DEE811B97A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F5BE390841B6444EA8A61EF118D206 /* Pods-NestedTableView.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -465,7 +464,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NestedTableView/Pods-NestedTableView.modulemap";
@@ -477,15 +476,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -508,6 +509,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -546,11 +548,10 @@
 			};
 			name = Debug;
 		};
-		BAF161DE4EB0363C366F4C60E1357436 /* Debug */ = {
+		ED75247B05F5FB3E0F9A7A50652ED7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36253FED806236B8D740B554D99EDAF4 /* LLNestedTableView.debug.xcconfig */;
+			baseConfigurationReference = 5D47E2609AF1C11E5233BC34254A4FF5 /* LLNestedTableView.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -562,7 +563,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LLNestedTableView/LLNestedTableView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LLNestedTableView/LLNestedTableView.modulemap";
 				PRODUCT_MODULE_NAME = LLNestedTableView;
@@ -579,11 +580,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C3646C49688075114FE6693831F4324 /* Build configuration list for PBXNativeTarget "LLNestedTableView" */ = {
+		14F45EE18D2216EE29C5EDD12A55FFE1 /* Build configuration list for PBXNativeTarget "Pods-NestedTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAF161DE4EB0363C366F4C60E1357436 /* Debug */,
-				1CBCBA12C416EC6C031FE6773B052CDF /* Release */,
+				078DBC43DA05C6D93366A5D27DA95D43 /* Debug */,
+				BD28339AA734B4D7F078DEE811B97A95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -591,17 +592,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
-				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80FF198C25710BCA64BD0E5A44B57EC2 /* Build configuration list for PBXNativeTarget "Pods-NestedTableView" */ = {
+		923382550DEEFB878A8AA557A284981A /* Build configuration list for PBXNativeTarget "LLNestedTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				686082E43BE8CF5A0635C1F768CA8699 /* Debug */,
-				05B0B9BF435299D2B65AC7996796CFBF /* Release */,
+				ED75247B05F5FB3E0F9A7A50652ED7F4 /* Debug */,
+				8E6315FEFC416F6F02BE5D0562C1F94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

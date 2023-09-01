@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.mainTable];
 }
@@ -49,6 +48,7 @@
         headerView.textAlignment = NSTextAlignmentCenter;
         headerView.backgroundColor = [UIColor yellowColor];
         _mainTable.tableHeaderView = headerView;
+        _mainTable.contentInsetAdjustmentBehavior = NO;
     }
     return _mainTable;
 }
@@ -61,7 +61,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
-    [cell addSubview:self.subTable];
+    [cell.contentView addSubview:self.subTable];
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

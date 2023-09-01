@@ -24,7 +24,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.mainTable.contentInsetAdjustmentBehavior = NO;
     self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.mainTable];
 }
@@ -59,6 +59,10 @@ static CGFloat const kHeaderViewHeight = 50.0f;
         _mainTable.tableFooterView = [UIView new];
         _mainTable.showsVerticalScrollIndicator = NO;
         _mainTable.typeNested = LLNestedScrollContainerTypeMain;
+        _mainTable.contentInsetAdjustmentBehavior = NO;
+        if (@available(iOS 15.0, *)) {
+            _mainTable.sectionHeaderTopPadding = 0;
+        }
         typeof(self) __weak ws = self;
         _mainTable.stayPosition = ^CGFloat() {
             return [ws.mainTable rectForSection:2].origin.y;
@@ -82,7 +86,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section<2) {
-        return getRandomNumberFromAtoB(1, 5);
+        return 4;
     }
     return 1;
 }
@@ -99,7 +103,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     }else{
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell addSubview:self.subView];
+        [cell.contentView addSubview:self.subView];
         return cell;
     }
 }

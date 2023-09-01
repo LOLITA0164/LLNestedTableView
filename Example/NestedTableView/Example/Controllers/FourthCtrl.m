@@ -29,10 +29,15 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     [super viewDidLoad];
     
     _mainTable.typeNested = LLNestedScrollContainerTypeMain;
+    _mainTable.contentInsetAdjustmentBehavior = NO;
+    if (@available(iOS 15.0, *)) {
+        _mainTable.sectionHeaderTopPadding = 0;
+    }
     typeof(self) __weak ws = self;
     _mainTable.stayPosition = ^CGFloat() {
         return [ws.mainTable rectForSection:2].origin.y;
     };
+    
     
     UILabel *footerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
     footerView.textAlignment = NSTextAlignmentCenter;
@@ -83,7 +88,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section<2) {
-        return getRandomNumberFromAtoB(1, 5);
+        return 4;
     }
     return 1;
 }
@@ -100,7 +105,7 @@ static CGFloat const kHeaderViewHeight = 50.0f;
     }else{
         UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell addSubview:self.contentView];
+        [cell.contentView addSubview:self.contentView];
         return cell;
     }
 }

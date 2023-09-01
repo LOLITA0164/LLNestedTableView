@@ -29,6 +29,9 @@
         _table.showsVerticalScrollIndicator = NO;
         _table.tableFooterView = [UIView new];
         _table.typeNested = LLNestedScrollContainerTypeSub;
+        if (@available(iOS 15.0, *)) {
+            _table.sectionHeaderTopPadding = 0;
+        }
     }
     return _table;
 }

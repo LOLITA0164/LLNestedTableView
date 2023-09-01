@@ -1,5 +1,5 @@
 PODS:
-  - LLNestedTableView (0.1.0)
+  - LLNestedTableView (0.2.0)
 
 DEPENDENCIES:
   - LLNestedTableView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LLNestedTableView: c693b2f7e283ab984e6af127d3f58a1799175684
+  LLNestedTableView: 2f9236519445d805cd375fba612065d75ece3d10
 
 PODFILE CHECKSUM: 32b297fe82f74e8a9c089ab533e342e7db4ee1ff
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.3
